@@ -8,8 +8,8 @@ export const RickAndMortyCharacter = () => {
     return (
         <div>
             <button onClick={() => {
-                setId(old => old + 1);
-                updateCharacterIds([String(id)]);
+                setId(old => old + 4);
+                updateCharacterIds([String(id), String(id + 1), String(id + 2), String(id + 3)]);
             }}>Add new character
             </button>
             {characters.map((character) => (
